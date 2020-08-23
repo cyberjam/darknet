@@ -63,7 +63,8 @@ def download_img(folder, dataset_dir, class_name, images_list, threads):
     :return: None
     '''
     image_dir = folder
-    download_dir = os.path.join(dataset_dir, image_dir, class_name)
+    # download_dir = os.path.join(dataset_dir, image_dir, class_name)
+    download_dir = '../data_for_colab/data' # jam
     downloaded_images_list = [f.split('.')[0] for f in os.listdir(download_dir)]
     images_list = list(set(images_list) - set(downloaded_images_list))
 
@@ -102,10 +103,12 @@ def get_label(folder, dataset_dir, class_name, class_code, df_val, class_list, a
 
         image_dir = folder
         if class_list is not None:
-            download_dir = os.path.join(dataset_dir, image_dir, class_list)
+            download_dir = '../data_for_colab/data' # jam
+            # download_dir = os.path.join(dataset_dir, image_dir, class_list)
             # label_dir = os.path.join(dataset_dir, folder, class_list, 'Label')
         else:
-            download_dir = os.path.join(dataset_dir, image_dir, class_name)
+            download_dir = '../data_for_colab/data' # jam
+            # download_dir = os.path.join(dataset_dir, image_dir, class_name)
             # label_dir = os.path.join(dataset_dir, folder, class_name, 'Label')
 
         downloaded_images_list = [f.split('.')[0] for f in os.listdir(download_dir) if f.endswith('.jpg')]

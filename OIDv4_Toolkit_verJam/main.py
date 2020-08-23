@@ -24,9 +24,9 @@ from modules.bounding_boxes import *
 from modules.image_level import *
 
 
-ROOT_DIR = ''
-# DEFAULT_OID_DIR = os.path.join(ROOT_DIR, 'OID')
-DEFAULT_OID_DIR='../data_for_colab/data/' # jam
+ROOT_DIR = './'
+DEFAULT_OID_DIR = os.path.join(ROOT_DIR, 'OID')
+
 
 if __name__ == '__main__':
 
