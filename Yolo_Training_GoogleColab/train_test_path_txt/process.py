@@ -6,7 +6,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 print(current_dir)
 
 # current_dir = 'C:/Python/Project/Yolo-Training-GoogleColab/data'
-current_dir = '/content/darknet/data_for_colab/data_for_colab/data'
+current_dir = '/content/darknet/data_for_colab/data'
 
 # Directory where the data will reside, relative to 'darknet.exe'
 #path_data = './NFPAdataset/'
