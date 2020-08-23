@@ -5,7 +5,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 
 print(current_dir)
 
-current_dir = 'C:/Python/Project/Yolo-Training-GoogleColab/data'
+# current_dir = 'C:/Python/Project/Yolo-Training-GoogleColab/data'
+current_dir = '/content/darknet/data_for_colab/data_for_colab/data'
 
 # Directory where the data will reside, relative to 'darknet.exe'
 #path_data = './NFPAdataset/'
@@ -14,8 +15,8 @@ current_dir = 'C:/Python/Project/Yolo-Training-GoogleColab/data'
 percentage_test = 10;
 
 # Create and/or truncate train.txt and test.txt
-file_train = open('../data_for_colab/tain.txt', 'w')
-file_test = open('../data_for_colab/test.txt', 'w')
+file_train = open('/content/darknet/data_for_colab/train.txt', 'w')
+file_test = open('/content/darknet/data_for_colab/test.txt', 'w')
 
 # Populate train.txt and test.txt
 counter = 1

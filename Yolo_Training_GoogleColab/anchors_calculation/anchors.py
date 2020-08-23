@@ -105,9 +105,9 @@ def kmeans(X,centroids,eps,anchor_file):
 
 def main(argv):
     parser = argparse.ArgumentParser()
-    parser.add_argument('-filelist', default = '../data_for_colab/train.txt',
+    parser.add_argument('-filelist', default = '/content/darknet/data_for_colab/train.txt',
                         help='path to filelist\n' )
-    parser.add_argument('-output_dir', default = '../data_for_colab/', type = str,
+    parser.add_argument('-output_dir', default = '/content/darknet/data_for_colab/', type = str,
                         help='Output anchor directory\n' )
     parser.add_argument('-num_clusters', default = 6, type = int,
                         help='number of clusters\n' )
