@@ -15,8 +15,8 @@ current_dir = '/content/darknet/data_for_colab/data'
 percentage_test = 10;
 
 # Create and/or truncate train.txt and test.txt
-file_train = open('/content/darknet/data_for_colab/train.txt', 'w')
-file_test = open('/content/darknet/data_for_colab/test.txt', 'w')
+file_train = open('/content/darknet/data_for_colab/train.txt', 'a')
+file_test = open('/content/darknet/data_for_colab/test.txt', 'a')
 
 # Populate train.txt and test.txt
 counter = 1
