@@ -150,7 +150,7 @@ def get_label(folder, dataset_dir, class_name, class_code, df_val, class_list, a
                     y_height = float(abs(YMax - YMin)) / height 
 
                     # each row in a file is name of the class_name, XMin, YMin, XMax, YMax (left top right bottom)
-                    print(1, x_center, y_center, x_width, y_height, file=f)
+                    print(0, x_center, y_center, x_width, y_height, file=f)
                     ###################### Jam code ############################
 
             except Exception as e:
